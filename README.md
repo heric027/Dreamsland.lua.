@@ -7453,15 +7453,15 @@ end
 
 Tabs.Hop:AddButton({
         Title = "dreamsland  Discord Server",
-        Description = "nosso wevr do dc",
+        Description = "nosso server do dc",
         Callback = function()
         setclipboard("https://discord.gg/mW5HQFAs")
         end
         })
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Fluent:Notify({
-    Title = "𝘿𝙍𝙀𝘼𝙈 𝙃𝙐𝘽",
-    Content = "The script has been loaded.",
+    Title = "Dream hub",
+    Content = "executando o script.",
     Durtion = 3
 })
-warn("𝘿𝙍𝙀𝘼𝙈 𝙃𝙐𝘽 Loading Completed !!")
+warn("Dream hub execução completa !!")
