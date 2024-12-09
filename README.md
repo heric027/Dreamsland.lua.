@@ -3,14 +3,8 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "Dream hub",
-    SubTitle = "Tabs.Main:AddButton({
-        Title = "dreamsland  Discord Server",
-        Description = "nosso wevr do dc",
-        Callback = function()
-        setclipboard("https://discord.gg/mW5HQFAs")
-        end
-        })",
+    Title = "𝘿𝙍𝙀𝘼𝙈 𝙃𝙐𝘽",
+    SubTitle = "Version 2.0",
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
@@ -7455,6 +7449,15 @@ spawn(function()
     end
 end)
 end
+
+
+Tabs.Hop:AddButton({
+        Title = "dreamsland  Discord Server",
+        Description = "nosso wevr do dc",
+        Callback = function()
+        setclipboard("https://discord.gg/mW5HQFAs")
+        end
+        })
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Fluent:Notify({
     Title = "𝘿𝙍𝙀𝘼𝙈 𝙃𝙐𝘽",
