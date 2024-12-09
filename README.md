@@ -13,16 +13,19 @@ local Window = Fluent:CreateWindow({
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "home" }),
+    Farming = Window:AddTab({ Title = "Farming", Icon = "inbox" }),
+    Sub farm = Window:AddTab({ Title = "Sub farm", Icon = "box" }),
     Setting = Window:AddTab({ Title = "Setting", Icon = "settings" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "box" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "User" }),
+    Sea event = Window:AddTab({ Title = "Sea event", Icon = "anchor" }),
     Teleport = Window:AddTab({ Title = "Island", Icon = "palmtree" }),
     Fruit = Window:AddTab({ Title = "Fruit", Icon = "cherry" }),
     Raid = Window:AddTab({ Title = "Raid", Icon = "swords" }),
     Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
     Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
 	Misc = Window:AddTab({ Title = "Misc", Icon = "list-plus" }),
-    Hop = Window:AddTab({ Title = "Hop", Icon = "wifi" }),
+    Hop = Window:AddTab({ Title = "game serve", Icon = "wifi" }),
 }
 local Options = Fluent.Options
 do
@@ -4774,7 +4777,14 @@ if Second_Sea then
 end
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Setting
-local SettingFarm = Tabs.Setting:AddSection("Farming")
+
+Tabs.Stting:AddToggle({
+        Title = "dreamsland  Discord Server",
+        Description = "nosso serve do Discord",
+        Callback = function()
+        setclipboard("https://discord.gg/mW5HQFAs")
+        end
+        })
 
 local ToggleFast = Tabs.Setting:AddToggle("ToggleFast", {Title = "Enabled Fast Attack",Description = "ataque rapido", Default = true })
 ToggleFast:OnChanged(function(Value)
